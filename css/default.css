@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+html,body {
+    background-color: var(--bg-2);
+    overflow: hidden;
+}
+* {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+}
+
+.sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--bg-2);
+    height: 100vh;
+    width: 25vw;
+    z-index: 1;
+    box-shadow: -40px 0px 50px 50px rgba(0,0,0,0.4);
+    text-align: center;
+    color: white;
+}
+.main {
+    position: absolute;
+    left: 25vw;
+    top: 0;
+    background-color: var(--bg-1);
+    height: 100vh;
+    overflow-y: scroll;
+    width: 75vw;
+    z-index: 0;
+    text-align: center;
+}
+seperator {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    height: 1px;
+    background-color: white;
+    display: block;
+    margin-bottom: 10px;
+}
+.sidebar a {
+    font-size: 30px;
+    text-decoration: none;
+    display: block;
+    color: var(--col-3);
+}
+.sidebar a.current {
+    color: var(--col-2);
+}
+.sidebar a:hover {
+    color: var(--col-4);
+}
+
+.main * {
+    font-size: 30px;
+}
+
+.big {
+    font-size: 40px;
+}
+
+.banner {
+    background-image: url("/assets/iwonderificangetcopyrightstrikedforthistypashit.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+}
+
+.recipe .result {
+    width: 100px;
+    margin-bottom: 50px;
+}
+.recipe .table {
+    width: 200px;
+}
+
+.item {
+    width: 100px;
+    margin-bottom: 100px;
+}
+
+div .tooltip {
+    height: 0;
+}
+
+div:hover > .tooltip {
+    height: 200px;
+}
+
+.cosmeticview {
+    height: 500px;
+}
