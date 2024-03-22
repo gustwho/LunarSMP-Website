@@ -8,9 +8,9 @@ import cosmetics
 
 app = Flask(__name__)
 htmlmap = {
-    "recipes": recipes.get,
-    "items": items.get,
-    "cosmetics": cosmetics.get,
+    #"recipes": recipes.get,
+    #"items": items.get,
+    #"cosmetics": cosmetics.get,
 }
 
 def safe_path(path): # i dont code security someone can probably still get around this!
